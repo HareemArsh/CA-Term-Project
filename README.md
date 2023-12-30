@@ -44,6 +44,32 @@ Contributions are welcome! If you find bugs, have feature requests, or want to c
 
 ## Instructions/Testcase:
 
+Below are some example test cases for a 3-stage pipelined processor with CSR support using RISC-V assembly language. These test cases cover a range of instructions, including arithmetic operations, control flow, and CSR operations.
+
+### Test Case 1: Arithmetic Operations
+li a0, 5          # Load immediate 5 into a0
+li a1, 7          # Load immediate 7 into a1
+add a2, a0, a1    # a2 = a0 + a1 (addition)
+sub a3, a1, a0    # a3 = a1 - a0 (subtraction)
+mul a4, a2, a3    # a4 = a2 * a3 (multiplication)
+
+### Test Case 2: Control Flow
+beq a2, a3, label_equal  # Branch if a2 == a3
+  li a5, 1         # Load immediate 1 into a5
+  j label_end      # Jump to label_end
+
+label_equal:
+  li a5, 0         # Load immediate 0 into a5
+
+label_end:
+
+### Test Case 3: CSR Operations
+li t0, 0x100      # Load immediate 0x100 into t0
+csrw mstatus, t0  # Set mstatus (Machine Status) CSR to t0
+
+# End of Test Cases
+These test cases include a variety of instructions to exercise different aspects of the processor, such as arithmetic operations, control flow, and CSR operations. Adjust the instructions based on the specific instructions and CSR specifications supported by your processor
+
 
 
 [A design diagram of project link of which should be attached in the README:] (https://drive.google.com/file/d/1XHxf7IS3_D_y3UqH5a-Dd581iqeFLX_J/view?usp=sharing)
