@@ -29,6 +29,4 @@ Integrate the processor into your larger digital system or project. Ensure prope
 Contributions are welcome! If you find bugs, have feature requests, or want to contribute improvements, please open an issue or submit a pull request.
 
 
-A design diagram of project link of which should be attached in the README:
-
-https://drive.google.com/file/d/1XHxf7IS3_D_y3UqH5a-Dd581iqeFLX_J/view?usp=sharing
+[A design diagram of project link of which should be attached in the README:] (https://drive.google.com/file/d/1XHxf7IS3_D_y3UqH5a-Dd581iqeFLX_J/view?usp=sharing)
